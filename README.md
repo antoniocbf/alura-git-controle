@@ -23,6 +23,7 @@ Local para armazenar os arquivos do projeto em um servidor, com redundância de 
 `sudo apt-get install git bash-completion`
 
 add to .bashrc
+
 `
   if [ -f /usr/local/share/bash-completion/bash_completion ]; then
     . /usr/local/share/bash-completion/bash_completion
@@ -35,7 +36,7 @@ add to .bashrc
 
 2. Paste the text below, substituting in your GitHub email address.
 
-`$ ssh-keygen -t rsa -b 4096 -C "antonioc.bessa@gmail.com" `
+   `$ ssh-keygen -t rsa -b 4096 -C "antonioc.bessa@gmail.com" `
 
 3. When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 
@@ -50,46 +51,61 @@ add to .bashrc
 ### Controle geral de versões (tag)
 
 `git tag`
+
 `git checkout v0.1`
 
 
 ### O que mudou nos arquivos? (diff)
 `git diff v0.1 v0.2`
-adfas
 
 
 ### Quem realizou as alterações em um arquivo linha a linha (blame --> culpa)
-`git blame index.html
+`git blame index.html`
 
 ## 02 Ciclo básico do GIT
 
 ### 1. O ciclo básico do GIT
 
 mkdir curso-git
+
 cd curso-git
+
 git init #  inicia um novo repositório
 
 ### Adicionando arquivos ao repositório
 git ls-files
+
 git status # lista o estado atual de cada arquivo, caso tenha sido modificado
+
 git add index.html # desejamos rastrear determinado arquivo, incluindo-o no controle de versão
+
 git status
+
 git config user.name "João Carlos Fonseca"
+
 git config user.email "jcfonsecagit@gmail.com"
+
 git config --global user.name "João Carlos Fonseca"
+
 git config --global user.email "jcfonsecagit@gmail.com"
+
 git commit -m "Início do projeto"
 
 
 ### Alterando o projeto
 vim index.html
+
 git status
+
 git add index.html
+
 git commit -m "Conteúdo da página index.html"
 
 ### Adicionando múltiplos arquivos
 git add arquivo1 arquivo2
+
 git add caminhoDeUmDiretorio
+
 git add .
 
 ### Recapitulação do processo
