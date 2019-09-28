@@ -2,7 +2,7 @@
 
 ## 01 Controle de versão, Git, Github: o que são?
 
-### Problemática
+### Intro
 * o projeto esteja armazenado em um local que seja acessível a todos os membros da equipe, 
 * permita ainda a atribuição de permissões para que os membros dessa equipe possam alterar os arquivos existentes, 
 * permitir que novos arquivos sejam criados e 
@@ -24,11 +24,11 @@ Local para armazenar os arquivos do projeto em um servidor, com redundância de 
 
 add to .bashrc
 
-`
+```
   if [ -f /usr/local/share/bash-completion/bash_completion ]; then
     . /usr/local/share/bash-completion/bash_completion
   fi
-`
+```
 
 ### GitHub
 
@@ -73,6 +73,7 @@ cd curso-git
 git init #  inicia um novo repositório
 
 ### Adicionando arquivos ao repositório
+```
 git ls-files
 
 git status # lista o estado atual de cada arquivo, caso tenha sido modificado
@@ -90,6 +91,8 @@ git config --global user.name "João Carlos Fonseca"
 git config --global user.email "jcfonsecagit@gmail.com"
 
 git commit -m "Início do projeto"
+
+```
 
 
 ### Alterando o projeto
@@ -138,7 +141,7 @@ git push origin master
 
 ### Lab
 
-`
+```
 antoniocbf@ubuntuvm:~/Projects/curso-git$ git status # estado atual do repositório - untracked (não rastreado)
 On branch master
 
@@ -191,4 +194,4 @@ Author: antoniocbf <antoniobessa@ymail.com>
 Date:   Thu Sep 26 15:01:40 2019 -0300
 
     Initial commit
-`
+```
